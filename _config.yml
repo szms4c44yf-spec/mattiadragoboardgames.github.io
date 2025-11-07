@@ -1,0 +1,16 @@
+title: "Mattia Drago Board Games"
+description: "Blog su giochi da tavolo, TCG ed eventi."
+url: "https://www.mattiadragoboardgames.com"
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+show_excerpts: true
+paginate: 10
+paginate_path: "/page:num"
+header_pages:
+  - about.md
+  - affiliazioni.md
+  - contatti.md
+markdown: kramdown
