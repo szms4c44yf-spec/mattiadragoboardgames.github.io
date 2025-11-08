@@ -162,3 +162,12 @@ a:hover{ color:var(--accent-2); text-decoration:underline; }
   font-size:.9rem;
   color:var(--text-2);
 }
+
+/* ====== Respiro tipografico nei post ====== */
+.post-content{ max-width:72ch; margin-inline:auto; }
+.post-content p{ line-height:1.85; margin:.75rem 0 1rem; }
+.post-content hr{ border:0; height:1px; background:rgba(124,58,237,.25); margin:1.6rem 0; }
+.post-content h2, .post-content h3{ margin-top:2rem; }
+
+/* ====== (Opz) nascondi link RSS grezzo del tema ====== */
+.feed-subscribe{ display:none; }
