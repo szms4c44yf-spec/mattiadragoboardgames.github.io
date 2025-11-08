@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <defs>
+    <style>
+      .s { fill: none; stroke: #ffffff; stroke-opacity: .12; stroke-width: 1.25; }
+    </style>
+  </defs>
+  <!-- Righe di “scaglie”: cerchi che si ripetono in modo perfettamente tileable -->
+  <!-- Riga 1 (offset 0) -->
+  <circle class="s" cx="0"  cy="30" r="30"/>
+  <circle class="s" cx="30" cy="30" r="30"/>
+  <circle class="s" cx="60" cy="30" r="30"/>
+  <!-- Riga 2 (offset 15, metà sopra/oltre il bordo per continuità verticale) -->
+  <circle class="s" cx="15" cy="0"  r="30"/>
+  <circle class="s" cx="45" cy="0"  r="30"/>
+</svg>
