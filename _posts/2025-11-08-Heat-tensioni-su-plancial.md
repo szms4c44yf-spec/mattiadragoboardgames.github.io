@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "HEAT: Pedal to the Metal — origini, design, persone, impatto (con panoramica espansioni)"
-date: 2025-11-08 12:55:00 +0100
+date: 2025-11-08 12:00:00 +0100
 image: /assets/heat/heat-base.jpg
 categories: [analisi]
 tags: [heat, days-of-wonder, asmodee, corse, family-plus]
