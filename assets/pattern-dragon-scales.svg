@@ -1,7 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 80" width="420" height="80">
-  <rect width="420" height="80" fill="none"/>
-  <g stroke="rgba(124,58,237,.25)" stroke-width="2" fill="none">
-    <path d="M0,80 Q21,40 42,80 T84,80 T126,80 T168,80 T210,80 T252,80 T294,80 T336,80 T378,80 T420,80"/>
-    <path d="M-21,40 Q0,0 21,40 T63,40 T105,40 T147,40 T189,40 T231,40 T273,40 T315,40 T357,40 T399,40 T441,40"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+  <defs>
+    <pattern id="p" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M12 0c6.6 0 12 5.4 12 12v12H0V12C0 5.4 5.4 0 12 0z" fill="#000" fill-opacity=".14"/>
+      <path d="M-12 12c6.6 0 12 5.4 12 12v12h-24V24c0-6.6 5.4-12 12-12z" fill="#000" fill-opacity=".12" transform="translate(24 -12)"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#p)"/>
 </svg>
