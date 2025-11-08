@@ -65,29 +65,24 @@ Introduce **pressione spaziale** e lettura del ritmo in tratte “cieche”, all
 - **Pioggia Battente (Heavy Rain, ITA)** → <a href="https://amzn.to/3JO9mii" rel="nofollow sponsored">link Amazon</a>  
 - **Visione a Tunnel (Tunnel Vision, ITA)** → <a href="https://amzn.to/43YAkui" rel="nofollow sponsored">link Amazon</a>
 
-### Scatole (cliccabili)
-<div class="box-grid">
-  <figure>
-    <a href="https://amzn.to/4oYFyhW" rel="nofollow sponsored">
-      <img src="/assets/heat/heat-base.jpg" alt="HEAT: Pedal to the Metal – scatola base (edizione italiana)" loading="lazy">
-    </a>
-    <figcaption>HEAT — Base</figcaption>
-  </figure>
-  <figure>
-    <a href="https://amzn.to/3JO9mii" rel="nofollow sponsored">
-      <img src="/assets/heat/heat-heavy-rain.jpg" alt="HEAT: Pioggia Battente – Heavy Rain (italiano)" loading="lazy">
-    </a>
-    <figcaption>Pioggia Battente (Heavy Rain)</figcaption>
-  </figure>
-  <figure>
-    <a href="https://amzn.to/43YAkui" rel="nofollow sponsored">
-      <img src="/assets/heat/heat-tunnel-vision.jpg" alt="HEAT: Visione a Tunnel – Tunnel Vision (italiano)" loading="lazy">
-    </a>
-    <figcaption>Visione a Tunnel (Tunnel Vision)</figcaption>
-  </figure>
-</div>
+## Scatole (cliccabili)
 
----
+<figure class="box-grid">
+  <a class="post-card__link" href="https://amzn.to/4oYFyhW" target="_blank" rel="nofollow sponsored">
+    <img src="{{ '/assets/heat/heat-base.jpg' | relative_url }}" alt="HEAT — Base">
+    <figcaption>HEAT — Base</figcaption>
+  </a>
+
+  <a class="post-card__link" href="https://amzn.to/3JO9mii" target="_blank" rel="nofollow sponsored">
+    <img src="{{ '/assets/heat/heat-heavy-rain.jpg' | relative_url }}" alt="HEAT — Pioggia Battente (Heavy Rain)">
+    <figcaption>Pioggia Battente (Heavy Rain)</figcaption>
+  </a>
+
+  <a class="post-card__link" href="https://amzn.to/43YAkui" target="_blank" rel="nofollow sponsored">
+    <img src="{{ '/assets/heat/heat-tunnel-vision.jpg' | relative_url }}" alt="HEAT — Visione a Tunnel (Tunnel Vision)">
+    <figcaption>Visione a Tunnel (Tunnel Vision)</figcaption>
+  </a>
+</figure>
 
 ## Per chi è (in 20 secondi)
 - **Nuovi al hobby** → regole semplici, tensione alta, campionato in serata.  
