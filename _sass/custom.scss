@@ -59,6 +59,7 @@ a:hover { text-decoration: underline; }
 
 /* Footer */
 .site-footer { opacity: .85; font-size: .9rem; }
+
 /* ===== Palette calda viola/nero ===== */
 :root{
   --bg-start: #0B0A12;   /* nero-melanzana */
@@ -142,3 +143,35 @@ a:hover{ color: var(--accent-2); text-decoration: underline; }
 }
 .box-grid img{ width:100%; height:auto; display:block; }
 .box-grid figcaption{ padding:.5rem .75rem; font-size:.9rem; color:var(--text-2); }
+
+/* === Pattern “scaglie di drago” su hero e footer === */
+.hero, .site-footer { position: relative; overflow: hidden; }
+
+.hero::before,
+.site-footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("/assets/pattern-dragon-scales.svg");
+  background-repeat: repeat;
+  background-size: 120px 120px;  /* scala pattern (60px = molto fine; 120px = più largo) */
+  opacity: .06;                  /* intensità (prova .04 – .10) */
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Mantieni il contenuto sopra il pattern */
+.hero__inner,
+.site-footer .wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+/* (Opzionale) Pattern leggerissimo anche nel contenitore principale
+.page-content .wrapper { position: relative; }
+.page-content .wrapper::before{
+  content:""; position:absolute; inset:0;
+  background:url("/assets/pattern-dragon-scales.svg") repeat;
+  background-size: 100px 100px; opacity:.04; pointer-events:none; z-index:0;
+}
+*/
