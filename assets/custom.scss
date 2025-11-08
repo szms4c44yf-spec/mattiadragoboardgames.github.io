@@ -1,3 +1,8 @@
+/* =========================================================
+   Tema “Viola Drago” per Minima (GitHub Pages)
+   File: assets/custom.scss
+   ========================================================= */
+
 /* ====== Palette calda viola/nero ====== */
 :root{
   --bg-start:#0B0A12; --bg-mid:#281433; --bg-end:#3B1C5A;
@@ -5,6 +10,10 @@
   --text:#EDE9FE; --text-2:#C7BEEB;
   --accent:#7C3AED; --accent-2:#C084FC;
   --border:#2A2340;
+
+  /* controllo pattern “scaglie” */
+  --scales-size: 20px;
+  --scales-opacity: .18;           /* .12–.28 consigliato */
 }
 
 /* ====== Sfondo globale con pattern scaglie ====== */
@@ -14,19 +23,19 @@ body{
     radial-gradient(800px 400px at 90% 110%, rgba(255,255,255,.04) 0, transparent 60%),
     url('/assets/pattern-dragon-scales.svg'),
     linear-gradient(180deg, var(--bg-start), var(--bg-mid) 45%, var(--bg-end));
-  background-size: auto, auto, 18px 18px, auto;
+  background-size: auto, auto, var(--scales-size) var(--scales-size), auto;
   background-attachment: fixed, fixed, fixed, fixed;
   background-blend-mode: soft-light, soft-light, soft-light, normal;
   color: var(--text);
 }
 
-/* Header/menu leggibile sullo sfondo */
+/* ====== Header/menu leggibile sullo sfondo ====== */
 .site-header{ background: transparent; border:0; }
 .site-title, .site-title:visited{ color:#fff; text-shadow:0 1px 2px rgba(0,0,0,.25); }
 .site-nav .page-link{ color:#fff; opacity:.9; }
 .site-nav .page-link:hover{ opacity:1; }
 
-/* Contenuti come card */
+/* ====== Contenuti come card ====== */
 .page-content .wrapper{
   background: var(--surface);
   border:1px solid var(--border);
@@ -37,6 +46,7 @@ body{
 .post-title,.post-link{ color:#fff; }
 .post-meta{ color:var(--text-2); }
 
+/* ====== Link, bottoni, tag ====== */
 a{ color:var(--accent); }
 a:hover{ color:var(--accent-2); text-decoration:underline; }
 
@@ -46,22 +56,52 @@ a:hover{ color:var(--accent-2); text-decoration:underline; }
 }
 .btn:hover{ background:var(--accent-2); }
 
-/* Hero */
-.hero{
-  margin:0 0 2.5rem 0; padding:4rem 1.25rem;
-  border-radius:1.25rem; border:1px solid rgba(124,58,237,.15);
-  background:
-    radial-gradient(1200px 600px at 10% -10%, rgba(124,58,237,.25), transparent 60%),
-    radial-gradient(1000px 500px at 110% 10%, rgba(124,58,237,.2), transparent 55%),
-    linear-gradient(180deg, #151222, #0b0b10);
-}
-.hero__inner{ max-width:880px; margin:0 auto; text-align:center; }
-.hero h1{ margin:0 0 .5rem 0; font-size:clamp(2rem,5vw,3rem); line-height:1.1; color:#fff; }
-.hero p{ margin:.25rem auto 1.25rem auto; font-size:clamp(1rem,2.2vw,1.125rem); opacity:.9; color:var(--text-2); }
-.btn-cta{ display:inline-block; padding:.7rem 1rem; border-radius:.75rem; border:1px solid rgba(124,58,237,.25);
-  background:var(--accent); color:#fff !important; text-decoration:none; font-weight:600; }
+/* Selezione testo */
+::selection{ background:#F0ABFC; color:#1b1226; }
 
-/* Griglia anteprime */
+/* ====== HERO con pattern e contrasto migliore ====== */
+.hero{
+  position: relative;
+  margin:0 0 2.5rem 0; padding:4rem 1.25rem;
+  border-radius:1.25rem;
+  border:1px solid rgba(124,58,237,.22);
+  background:
+    radial-gradient(1200px 600px at 10% -10%, rgba(124,58,237,.30), transparent 60%),
+    radial-gradient(1000px 500px at 110% 10%, rgba(124,58,237,.22), transparent 55%),
+    linear-gradient(180deg, #141126, #0b0b10);
+  overflow: hidden;
+}
+/* pattern “scaglie” nel hero, più visibile */
+.hero::after{
+  content:"";
+  position:absolute; inset:0;
+  background-image:url('/assets/pattern-dragon-scales.svg');
+  background-size: calc(var(--scales-size) * 2) calc(var(--scales-size) * 2);
+  background-repeat:repeat;
+  opacity: calc(var(--scales-opacity) + .06);   /* un filo più forte del body */
+  mix-blend-mode: overlay;
+  pointer-events:none;
+}
+
+.hero__inner{ max-width:880px; margin:0 auto; text-align:center; }
+.hero h1{
+  margin:0 0 .5rem 0; font-size:clamp(2rem,5vw,3rem); line-height:1.1; color:#fff;
+  text-shadow:0 2px 18px rgba(0,0,0,.45);
+}
+.hero p{
+  margin:.25rem auto 1.25rem auto; font-size:clamp(1rem,2.2vw,1.125rem);
+  color:var(--text-2); opacity:.95; text-shadow:0 1px 12px rgba(0,0,0,.35);
+}
+.btn-cta{
+  display:inline-block; padding:.8rem 1.05rem; border-radius:.85rem;
+  background: linear-gradient(180deg, #8b5cf6, #7c3aed);
+  color:#fff !important; font-weight:700; letter-spacing:.2px;
+  box-shadow: 0 10px 24px rgba(124,58,237,.35), inset 0 1px 0 rgba(255,255,255,.18);
+  border: 1px solid rgba(255,255,255,.15);
+}
+.btn-cta:hover{ filter: brightness(1.06); transform: translateY(-1px); }
+
+/* ====== Griglia anteprime ====== */
 .posts-grid{
   display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:1rem;
 }
@@ -84,9 +124,15 @@ a:hover{ color:var(--accent-2); text-decoration:underline; }
 .post-card__meta{ margin:0 0 .35rem 0; opacity:.75; font-size:.9rem; color:var(--text-2); }
 .post-card__excerpt{ margin:0; opacity:.9; font-size:.95rem; color:var(--text-2); }
 
-/* Footer */
-.site-footer{ background:transparent; border:0; color:var(--text-2); }
+/* ====== Footer con pattern più soft ====== */
+.site-footer{ position:relative; background:transparent; border:0; color:var(--text-2); }
 .site-footer a{ color:var(--accent-2); }
-
-/* Selezione testo */
-::selection{ background:#F0ABFC; color:#1b1226; }
+.site-footer::before{
+  content:""; position:absolute; inset:0;
+  background-image:url('/assets/pattern-dragon-scales.svg');
+  background-size: calc(var(--scales-size) * 1.6) calc(var(--scales-size) * 1.6);
+  background-repeat:repeat;
+  opacity: calc(var(--scales-opacity) - .04);  /* più delicato del hero */
+  mix-blend-mode: overlay;
+  pointer-events:none;
+}
