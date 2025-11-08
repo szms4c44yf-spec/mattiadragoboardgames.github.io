@@ -77,7 +77,6 @@ Di nuovo supporto al **7°**, **stagione 1965** e **miglioria “Alettone Fronta
 - **Pioggia Battente (Heavy Rain, ITA)** → <a href="https://amzn.to/3JO9mii" rel="nofollow sponsored">link Amazon</a>  
 - **Visione a Tunnel (Tunnel Vision, ITA)** → <a href="https://amzn.to/43YAkui" rel="nofollow sponsored">link Amazon</a>
 
-## Scatole (cliccabili)
 
 <figure class="box-grid">
   <a class="post-card__link" href="https://amzn.to/4oYFyhW" target="_blank" rel="nofollow sponsored">
