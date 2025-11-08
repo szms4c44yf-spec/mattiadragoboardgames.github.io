@@ -2,7 +2,7 @@
 ---
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@700;800&display=swap');
 
-/* Variabili Minima (devono stare prima di @import "minima") */
+/* Variabili usate da Minima (mettile PRIMA degli import del tema) */
 $brand-color: #7C3AED;
 $link-base-color: $brand-color;
 $link-visited-color: #9B59F0;
@@ -12,7 +12,9 @@ $background-color: #0B0A12;
 $code-background-color: #1A1628;
 $border-color-01: #2A2340;
 
-@import "minima";
+/* >>> Import corretti per GitHub Pages (Minima) <<< */
+@import "minima/skins/{{ site.minima.skin | default: 'classic' }}";
+@import "minima/initialize";
 
 /* Tipografia base */
 body {
@@ -27,5 +29,5 @@ h1, h2, h3, h4 {
 h1 { font-weight: 800; }
 h2, h3 { font-weight: 700; }
 
-/* Importa il tuo stile personalizzato */
+/* Stili personalizzati */
 @import "custom";
