@@ -136,3 +136,29 @@ a:hover{ color:var(--accent-2); text-decoration:underline; }
   mix-blend-mode: overlay;
   pointer-events:none;
 }
+
+/* ====== Box-grid immagini (per sezione “Scatole”) ====== */
+.box-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:12px;
+  margin:.5rem 0 1rem;
+}
+.box-grid a{
+  display:block;
+  border:1px solid var(--border);
+  border-radius:12px;
+  overflow:hidden;
+  background:var(--surface-2);
+  text-decoration:none;
+}
+.box-grid img{
+  display:block;
+  width:100%;
+  height:auto;            /* <-- FIX per non farle “sparire” */
+}
+.box-grid figcaption{
+  padding:.5rem .75rem;
+  font-size:.9rem;
+  color:var(--text-2);
+}
