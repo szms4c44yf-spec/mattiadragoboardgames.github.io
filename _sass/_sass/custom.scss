@@ -1,0 +1,19 @@
+/* Grid per le scatole prodotto */
+.box-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin: 0 0 1rem 0;
+}
+.box-grid figure {
+  margin: 0;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+}
+@media (prefers-color-scheme: dark) {
+  .box-grid figure { background: #111; border-color: rgba(255,255,255,.08); }
+}
+.box-grid img { width: 100%; height: auto; display: block; }
+.box-grid figcaption { padding: .5rem .75rem; font-size: .9rem; opacity: .85; }
