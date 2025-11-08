@@ -1,3 +1,5 @@
 theme: minima
 minima:
   skin: auto
+future: true
+timezone: Europe/Rome
