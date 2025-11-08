@@ -1,0 +1,10 @@
+<article class="post-card">
+  <a class="post-card__link" href="{{ include.post.url | relative_url }}">
+    <div class="post-card__thumb" style="--bg:url('{{ include.post.image | default: '/assets/cover-fallback.svg' }}')"></div>
+    <div class="post-card__body">
+      <h3 class="post-card__title">{{ include.post.title }}</h3>
+      <p class="post-card__meta">{{ include.post.date | date: "%d %b %Y" }}</p>
+      <p class="post-card__excerpt">{{ include.post.excerpt | strip_html | truncate: 140 }}</p>
+    </div>
+  </a>
+</article>
