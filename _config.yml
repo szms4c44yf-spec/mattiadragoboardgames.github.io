@@ -1,5 +1,17 @@
 theme: minima
 minima:
   skin: auto
+
 future: true
 timezone: Europe/Rome
+
+title: Mattia Drago Board Games
+description: Analisi di giochi da tavolo: origini & contesto, scelte di design, persone & storie, impatto sociale.
+url: https://www.mattiadragoboardgames.com
+permalink: /:categories/:title/
+
+header_pages:
+  - about.md
+  - affiliazioni.md
+  - contatti.md
+  - index.md
