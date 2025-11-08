@@ -3,13 +3,12 @@ url: "https://www.mattiadragoboardgames.com"
 
 theme: minima
 minima:
-  skin: auto
+  skin: classic   # <-- non 'auto'
 
 timezone: Europe/Rome
 future: true
 permalink: "/:categories/:title/"
 
-# uso '>' per evitare problemi con i due punti nella descrizione
 description: >
   Analisi di giochi da tavolo: origini & contesto, scelte di design, persone & storie, impatto sociale.
 
