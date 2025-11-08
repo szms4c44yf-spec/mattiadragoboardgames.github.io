@@ -18,7 +18,7 @@ HEAT fa questo: prende la corsa anni ’60 e la traduce in **decisioni che scald
 **2022, Days of Wonder / Asmodee.**  
 Firmato da **Asger Harding Granerud** e **Daniel Skjold Pedersen**, HEAT non vuole misurare al millimetro: vuole **raccontare la gara**.
 
-Niente dadi: **gestisci la mano**, scegli la **marcia**, cerchi **scia e traiettorie**. Il prezzo della fretta è **calore**: accumuli stress nel motore e prima o poi **dovrai raffreddarlo**. È un linguaggio: **più rischi, più bruci** — ma magari passi la staccata che conta.
+Niente dadi: **gestisci la mano**, scegli la **marcia**, cerchi **scia e traiettorie**. Il prezzo della fretta è **calore**: accumuli stress nel motore e prima o poi **dovrai raffreddarlo**. È un linguaggio: **più rischi, più bruci** ma magari passi la staccata che conta.
 
 ---
 
@@ -26,7 +26,7 @@ HEAT è figlio della linea **family-plus** di Days of Wonder: regole pulite, pro
 
 L’epoca sono i **Sessanta**: piloti che guidano **con il corpo**, piste che non perdonano, il cronometro come unica legge. Qui l’estetica non è vernice: è **ritmo** e **temperatura** — quella sensazione di tenere l’auto tirata per due curve di fila e chiederti se avrai ancora freni sul rettilineo.
 
-Al tavolo tutto passa da scelte che si **sentono**. La **marcia** decide quante carte giochi: spingi forte e **scaldi**, trattieni e respiri. La **scia** è ossigeno quando la mano implora pietà; le **curve** sono un patto col diavolo — puoi tirarle, ma la pista presenta il conto.
+Al tavolo tutto passa da scelte che si **sentono**. La **marcia** decide quante carte giochi: spingi forte e **scaldi**, trattieni e respiri. La **scia** è ossigeno quando la mano implora pietà; le **curve** sono un patto col diavolo puoi tirarle, ma la pista presenta il conto.
 
 Lo **Stress** non è caos: è **incertezza indirizzata**. Sai dove vuoi arrivare, ma devi metterci **coraggio**. E poi c’è il **timing**: quando frenare, quando raffreddare, quando accettare di farti un po’ male adesso per andare **meglio dopo**.
 
