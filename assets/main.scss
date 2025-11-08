@@ -2,7 +2,9 @@
 ---
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@700;800&display=swap');
 
-/* Variabili usate da Minima (mettile PRIMA degli import del tema) */
+/* =========================
+   Variabili (prima del tema)
+   ========================= */
 $brand-color: #7C3AED;
 $link-base-color: $brand-color;
 $link-visited-color: #9B59F0;
@@ -12,16 +14,22 @@ $background-color: #0B0A12;
 $code-background-color: #1A1628;
 $border-color-01: #2A2340;
 
-/* >>> Import corretti per GitHub Pages (Minima) <<< */
-@import "minima/skins/{{ site.minima.skin | default: 'classic' }}";
+/* ==========================================
+   Import compatibili con GitHub Pages / Minima
+   ========================================== */
+@import "minima/skins/classic";   /* non usare 'auto': non esiste su GH Pages */
 @import "minima/initialize";
 
-/* Tipografia base */
+/* =================
+   Tipografia di base
+   ================= */
 body {
-  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue",
+               Arial, "Noto Sans", "Liberation Sans", sans-serif;
   font-size: 17px;
   line-height: 1.7;
 }
+
 h1, h2, h3, h4 {
   font-family: "Manrope", "Inter", system-ui, sans-serif;
   letter-spacing: .2px;
@@ -29,5 +37,7 @@ h1, h2, h3, h4 {
 h1 { font-weight: 800; }
 h2, h3 { font-weight: 700; }
 
-/* Stili personalizzati */
+/* =========================
+   Stili personalizzati (tuoi)
+   ========================= */
 @import "custom";
