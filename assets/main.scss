@@ -1,21 +1,20 @@
 ---
 ---
-/* Font (Google Fonts) */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@700;800&display=swap');
 
-/* === Variabili Minima (prima di @import "minima") === */
-$brand-color: #7C3AED;              // viola caldo (accento)
+/* Variabili Minima (devono stare prima di @import "minima") */
+$brand-color: #7C3AED;
 $link-base-color: $brand-color;
 $link-visited-color: #9B59F0;
 
-$text-color: #EDE9FE;               // testo chiaro
-$background-color: #0B0A12;         // base scura (comunque sovrascriviamo in custom)
-$code-background-color: #1A1628;    // blocchi codice
-$border-color-01: #2A2340;          // linee e separatori
+$text-color: #EDE9FE;
+$background-color: #0B0A12;
+$code-background-color: #1A1628;
+$border-color-01: #2A2340;
 
 @import "minima";
 
-/* === Tipografia === */
+/* Tipografia base */
 body {
   font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
   font-size: 17px;
@@ -28,5 +27,5 @@ h1, h2, h3, h4 {
 h1 { font-weight: 800; }
 h2, h3 { font-weight: 700; }
 
-/* Importa le regole personalizzate */
+/* Importa il tuo stile personalizzato */
 @import "custom";
