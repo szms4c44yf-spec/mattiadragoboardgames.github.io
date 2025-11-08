@@ -59,3 +59,86 @@ a:hover { text-decoration: underline; }
 
 /* Footer */
 .site-footer { opacity: .85; font-size: .9rem; }
+/* ===== Palette calda viola/nero ===== */
+:root{
+  --bg-start: #0B0A12;   /* nero-melanzana */
+  --bg-mid:   #281433;   /* aubergine */
+  --bg-end:   #3B1C5A;   /* prugna */
+  --surface:  #151222;   /* card scura */
+  --surface-2:#1A1628;   /* hover/secondaria */
+  --text:     #EDE9FE;   /* testo primario */
+  --text-2:   #C7BEEB;   /* testo secondario */
+  --accent:   #7C3AED;   /* brand */
+  --accent-2: #C084FC;   /* hover brand */
+  --border:   #2A2340;
+}
+
+/* ===== Sfondo caldo + overlay soft ===== */
+body{
+  background:
+    radial-gradient(1200px 600px at 10% -10%, rgba(255,255,255,.06) 0, transparent 55%),
+    radial-gradient(800px 400px at 90% 110%, rgba(255,255,255,.04) 0, transparent 60%),
+    linear-gradient(180deg, var(--bg-start), var(--bg-mid) 45%, var(--bg-end));
+  color: var(--text);
+}
+
+/* ===== Header trasparente, menu leggibile ===== */
+.site-header{ background: transparent; border:0; }
+.site-title, .site-title:visited{ color:#fff; text-shadow: 0 1px 2px rgba(0,0,0,.25); }
+.site-nav .page-link{ color:#fff; opacity:.9; }
+.site-nav .page-link:hover{ color:#fff; opacity:1; }
+
+/* ===== Contenuti come “card” scure ===== */
+.page-content .wrapper{
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,.25);
+  padding: 28px 26px 18px;
+}
+.post-title, .post-link{ color:#fff; }
+.post-meta{ color: var(--text-2); }
+
+.post img{
+  border-radius: 12px;
+  box-shadow: 0 10px 24px rgba(0,0,0,.35);
+}
+
+/* ===== Link & elementi interattivi ===== */
+a{ color: var(--accent); }
+a:hover{ color: var(--accent-2); text-decoration: underline; }
+
+/* Pulsante rapido riusabile */
+.btn{
+  display:inline-block; padding:.55rem .9rem; border-radius:10px;
+  background: var(--accent); color:#fff; text-decoration:none; font-weight:600;
+}
+.btn:hover{ background: var(--accent-2); }
+
+/* Tag / badge */
+.post-tags a, .post-categories a{
+  display:inline-block; padding:.25rem .6rem; margin:.15rem;
+  background: var(--surface-2); color: var(--text-2);
+  border-radius:999px; border:1px solid var(--border); text-decoration:none;
+}
+
+/* Selezione testo calda */
+::selection{ background:#F0ABFC; color:#1b1226; }
+
+/* Footer scuro integrato */
+.site-footer{
+  background: transparent; border:0; color: var(--text-2);
+}
+.site-footer a{ color: var(--accent-2); }
+
+/* === Griglia “box-grid” (se non l’hai già) === */
+.box-grid{
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:12px; margin:0 0 1rem 0;
+}
+.box-grid figure{
+  margin:0; border:1px solid rgba(255,255,255,.08);
+  border-radius:12px; overflow:hidden; background: var(--surface-2);
+}
+.box-grid img{ width:100%; height:auto; display:block; }
+.box-grid figcaption{ padding:.5rem .75rem; font-size:.9rem; color:var(--text-2); }
