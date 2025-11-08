@@ -1,0 +1,19 @@
+---
+layout: default
+title: "Ultimi articoli"
+---
+
+<section class="hero">
+  <div class="hero__inner">
+    <h1>Mattia Drago Board Games</h1>
+    <p>Un Gioco al Giorno — versione estesa: dalle regole alle storie dietro i giochi e i loro creatori.</p>
+    <a class="btn-cta" href="/about/">Chi sono</a>
+  </div>
+</section>
+
+<section class="posts-grid">
+  {% assign posts = site.posts %}
+  {% for post in posts %}
+    {% include post-card.html post=post %}
+  {% endfor %}
+</section>

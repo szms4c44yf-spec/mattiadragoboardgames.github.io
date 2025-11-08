@@ -1,0 +1,17 @@
+# Add/merge these keys into your existing _config.yml
+minima:
+  skin: auto
+  social_links:
+    - { platform: github,  user_url: "https://github.com/szms4c44yf-spec" }
+    - { platform: youtube, user_url: "https://youtube.com/@dragomattia" }
+    - { platform: instagram, user_url: "https://www.instagram.com/drago_mattia_/" }
+    - { platform: tiktok, user_url: "https://www.tiktok.com/@dragomattia" }
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+
+paginate: 12
+paginate_path: "/page:num"
